@@ -15,23 +15,20 @@ end
 
 def word_substituter(tweet)
   dic = dictionary
-  #dic = dic.split(" ")
   tweet = tweet.split(" ")
-  #keys = dic.keys
   
   tweet.map do |word|
     dic.each do |long, short|
-      word = short
-      if word == long 
+      word = short if word == long 
         #tweet[i] = short
         #puts "#{i}#{tweet[i]}"
         #i += 1
       #else 
         #i += 1
        
-      end
-      word
+      
     end
+    word
   end
   #puts tweet
   tweet = tweet.join(" ")
