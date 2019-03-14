@@ -18,8 +18,10 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   
   tweet.collect do |word|
-    puts word
+    if word == "hello"
+      word = "hi"
+    end
   end
-  #arr = arr.join(" ")
-  #return arr
+  tweet = tweet.join(" ")
+  return tweet
 end
