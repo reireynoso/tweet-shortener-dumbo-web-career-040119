@@ -13,13 +13,12 @@ def dictionary
   }
 end
 
-def word_substituter(string)
-  
+def word_substituter(str)
+  string = str
   dic = dictionary
   string = string.split(" ")
-  i = 0
-  string[i]
   string.collect do |word|
+    i = 0
     dic.collect do |word1,replace|
       if word == word1
         string[i] = replace
