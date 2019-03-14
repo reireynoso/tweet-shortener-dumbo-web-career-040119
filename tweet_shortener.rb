@@ -20,7 +20,7 @@ def word_substituter(tweet)
   tweet.collect do |word|
     i = 0
     if word == "Hey"
-      tweet[0] = "hi"
+      tweet[i] = "hi"
     end
   end
   puts tweet[0]
