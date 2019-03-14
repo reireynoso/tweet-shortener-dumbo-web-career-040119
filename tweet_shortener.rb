@@ -18,8 +18,8 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   i = 0
   tweet.collect do |word|
-      if word == long
-        tweet[i] = short
+      if word == "at"
+        tweet[i] = "@"
       else
         i += 1
       end
