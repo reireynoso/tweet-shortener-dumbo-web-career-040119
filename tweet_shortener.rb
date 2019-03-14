@@ -23,8 +23,6 @@ def word_substituter(str)
       if word == word1
         arr << replace
         #puts "#{word}"
-      else 
-        arr << word1
       end
       
     end
