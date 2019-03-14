@@ -16,7 +16,7 @@ end
 def word_substituter(tweet)
   dic = dictionary
   tweet = tweet.split(" ")
-  puts dic.value
+  puts dic.keys
   i = 0
   tweet.collect do |word|
       if word == "at"
