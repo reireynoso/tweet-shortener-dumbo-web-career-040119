@@ -22,11 +22,6 @@ def word_substituter(tweet)
   tweet.each_with_index do |word,index|
     dic.each do |long, short|
       if word == long 
-        #tweet[i] = short
-        #puts "#{i}#{tweet[i]}"
-        #i += 1
-      #else 
-        #i += 1
        tweet[index] = short
       end
     end
