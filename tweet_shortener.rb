@@ -22,7 +22,7 @@ def word_substituter(tweet)
       word = "hi"
     end
   end
-  tweet = tweet.join(" ")
   puts tweet[0]
+  tweet = tweet.join(" ")
   return tweet
 end
