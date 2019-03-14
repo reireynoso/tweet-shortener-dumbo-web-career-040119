@@ -24,8 +24,8 @@ def word_substituter(string)
         puts "#{word}"
       end
     end
-    string = string.join(" ")
-    #return string
+
   end
-  
+  string = string.join(" ")
+  #return string
 end
