@@ -25,7 +25,7 @@ def word_substituter(string)
       end
       i += 1
     end
-    return string
+    #return string
   end
   
 end
