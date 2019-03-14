@@ -22,7 +22,7 @@ def word_substituter(tweet)
   end
   i = 0
   tweet.collect do |word|
-      if word == "at"
+      if word == dic.each
         tweet[i] = "@"
       else
         i += 1
