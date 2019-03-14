@@ -22,12 +22,14 @@ def word_substituter(tweet)
   end
   i = 0
   tweet.collect do |word|
-      if word == "at"
-        tweet[i] = "@"
+    dic.each |long, short|
+      if word == long
+        tweet[i] = short
         i += 1
       else
         i += 1
       end
+    end 
   end
   #puts tweet
   tweet = tweet.join(" ")
