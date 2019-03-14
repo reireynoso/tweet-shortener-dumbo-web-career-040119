@@ -24,7 +24,7 @@ def word_substituter(string)
         word = replace
         #string[i] = replace
         puts "#{string[i]}"
-      else 
+      elsif word !== word1 
         puts "#{word}"
       end
     end
