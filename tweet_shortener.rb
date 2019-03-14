@@ -20,7 +20,6 @@ def word_substituter(string)
   string.collect do |word|
     #i = 0
     dic.collect do |word1,replace|
-      word
       if word == word1
         word = replace
         #string[i] = replace
