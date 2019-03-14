@@ -21,7 +21,7 @@ def word_substituter(tweet)
   tweet.collect do |word|
     dic.each do |long, short|
       if word == long
-        puts word
+        puts short
         #tweet[i] = short
         i += 1
       else
