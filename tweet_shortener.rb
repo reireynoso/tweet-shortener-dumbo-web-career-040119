@@ -19,10 +19,10 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   #keys = dic.keys
   i = 0
-  tweet.each_index do |word,index|
+  tweet.collect do |word|
       if word == "at"
         puts "#{tweet[i]}"
-        tweet[index] = "@"
+        tweet[i] = "@"
         puts "#{tweet[i]}"
         i += 1
       else
