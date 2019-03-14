@@ -24,6 +24,7 @@ def word_substituter(tweet)
       if word == "at"
         puts "#{tweet[i]}"
         tweet[i] = "@"
+        puts "#{tweet[i]}"
         i += 1
       else
         i += 1
