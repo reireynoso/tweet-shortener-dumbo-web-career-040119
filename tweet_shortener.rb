@@ -18,7 +18,7 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   
   tweet.collect do |word|
-    if word == "hello"
+    if word == "Hey"
       word = "hi"
     end
   end
