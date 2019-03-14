@@ -16,12 +16,14 @@ end
 def word_substituter(string)
   dic = dictionary
   string = string.split(" ")
-  dic.collect do |word, replace|
-    string.each do |word1|
-      if word1 == word
-        word1 = replace
-        puts "#{word1}"
+  i = 0
+  string.collect do |word|
+    dic.each do |word1,replace|
+      if word == word1
+        string[i] = replace
+        puts "#{string[i]}"
       end
+      i += 1
     end
     return string
   end
