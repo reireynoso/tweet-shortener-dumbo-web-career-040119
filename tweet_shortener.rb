@@ -18,10 +18,12 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   i = 0
   tweet.collect do |word|
-    if word == "to"
-      tweet[i] = "2"
-    else
-      i += 1
+    dic.each do |long,short|
+      if word == long
+        tweet[i] = short
+      else
+        i += 1
+      end
     end
   end
   #puts tweet
