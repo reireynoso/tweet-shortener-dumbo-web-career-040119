@@ -18,8 +18,14 @@ def word_substituter(str)
   dic = dictionary
   string = string.split(" ")
   arr = []
-  string.collect do |word|
-    arr << word
+  dic.collect do |word1,replace|
+    dic.collect do |word|
+      if word1 == word
+        arr << replace
+        #puts "#{word}"
+      end
+      
+    end
   end
   arr = arr.join(" ")
   return arr
