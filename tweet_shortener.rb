@@ -48,6 +48,7 @@ end
 
 def shortened_tweet_truncator(array)
   shortened = word_substituter(array)
-  puts shortened.length
-  
+  if shortened.length > 140
+    shortened[0..139]
+  end
 end 
