@@ -13,13 +13,12 @@ def dictionary
   }
 end
 
-def word_substituter(str)
-  string = str
+def word_substituter(tweet)
   dic = dictionary
-  string = string.split(" ")
+  tweet = tweet.split(" ")
   
-  string.collect do |word|
-    if word == dic.keys
+  tweet.collect do |word|
+    dic.collect do |long,short|
       puts word
     end
   end
