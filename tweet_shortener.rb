@@ -21,12 +21,10 @@ def word_substituter(string)
     dic.collect do |word1,replace|
       if word == word1
         word = replace
-        #string[i] = replace
         puts "#{word}"
       end
     end
-
   end
-  string = string.join(" ")
+  string.join(" ")
   return string
 end
