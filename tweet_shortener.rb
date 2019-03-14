@@ -17,7 +17,6 @@ def word_substituter(string)
   dic = dictionary
   string = string.split(" ")
   string.collect do |word|
-    puts 
     dic.each do |word1,replace|
       if word == word1
         word = replace
