@@ -22,6 +22,7 @@ def word_substituter(tweet)
     if word == "to"
       tweet[i] = "2"
     end
+    i += 1
   end
   puts tweet
   tweet = tweet.join(" ")
