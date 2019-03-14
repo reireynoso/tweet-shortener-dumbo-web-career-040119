@@ -21,7 +21,7 @@ def word_substituter(string)
     dic.each do |word1,replace|
       if word == word1
         string[i] = replace
-        puts "#{string}"
+        puts "#{string[i]}"
       end
       i += 1
     end
