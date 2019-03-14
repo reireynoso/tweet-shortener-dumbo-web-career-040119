@@ -16,9 +16,8 @@ end
 def word_substituter(tweet)
   dic = dictionary
   tweet = tweet.split(" ")
-  
+  i = 0
   tweet.collect do |word|
-    i = 0
     if word == "to"
       tweet[i] = "2"
     else
