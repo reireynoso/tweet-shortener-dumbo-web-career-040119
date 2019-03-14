@@ -20,7 +20,7 @@ def word_substituter(tweet)
   puts keys
   i = 0
   tweet.collect do |word|
-      if word == "at"
+      if word == keys
         tweet[i] = "@"
       else
         i += 1
