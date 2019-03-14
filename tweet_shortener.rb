@@ -18,8 +18,9 @@ def word_substituter(tweet)
   #dic = dic.split(" ")
   tweet = tweet.split(" ")
   #keys = dic.keys
-  i = 0
+  
   tweet.collect do |word|
+    i = 0
     dic.each do |long, short|
       if word == long 
         tweet[i] = short
