@@ -45,3 +45,7 @@ def selective_tweet_shortener(array)
     return array
   end 
 end
+
+def shortened_tweet_truncator(array)
+  
+end 
