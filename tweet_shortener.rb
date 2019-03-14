@@ -21,10 +21,11 @@ def word_substituter(tweet)
     i = 0
     if word == "to"
       tweet[i] = "2"
+    else
+      i += 1
     end
-    i += 1
   end
-  puts tweet
+  #puts tweet
   tweet = tweet.join(" ")
   return tweet
 end
