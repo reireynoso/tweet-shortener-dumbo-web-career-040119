@@ -18,9 +18,7 @@ def word_substituter(tweet)
   tweet = tweet.split(" ")
   
   tweet.collect do |word|
-    dic.collect do |long,short|
-      puts word
-    end
+    puts word
   end
   #arr = arr.join(" ")
   #return arr
