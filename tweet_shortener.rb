@@ -7,7 +7,6 @@ def dictionary
     "too" => "2",
     "four" => "4",
     "for" => "4",
-    "for" => "4",
     "be" => "b",
     "you" => "u",
     "at" => "@",
@@ -23,7 +22,7 @@ def word_substituter(tweet)
   
   tweet.each_with_index do |word,index|
     dic.each do |long, short|
-      if word == long 
+      if word.downcase == long 
        tweet[index] = short
       end
     end
