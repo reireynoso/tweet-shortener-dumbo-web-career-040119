@@ -19,7 +19,7 @@ def word_substituter(str)
   string = string.split(" ")
   arr = []
   dic.collect do |word1,replace|
-    dic.collect do |word|
+    string.collect do |word|
       if word1 == word
         arr << replace
         #puts "#{word}"
