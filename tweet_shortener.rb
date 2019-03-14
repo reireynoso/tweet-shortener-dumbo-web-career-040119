@@ -23,7 +23,7 @@ def word_substituter(string)
       if word == word1
         word = replace
         #string[i] = replace
-        puts "#{string[i]}"
+        puts "#{word}"
       end
     end
 
