@@ -47,5 +47,7 @@ def selective_tweet_shortener(array)
 end
 
 def shortened_tweet_truncator(array)
+  shortened = word_substituter(array)
+  puts shortened.length
   
 end 
