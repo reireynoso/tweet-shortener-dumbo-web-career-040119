@@ -23,6 +23,6 @@ def word_substituter(str)
       puts word
     end
   end
-  arr = arr.join(" ")
-  return arr
+  #arr = arr.join(" ")
+  #return arr
 end
