@@ -23,7 +23,7 @@ def word_substituter(tweet)
     dic.each do |long, short|
       if word == long 
         tweet[i] = short
-        puts tweet[i]
+        puts "#{i}#{tweet[i]}"
         i += 1
       else
         i += 1
